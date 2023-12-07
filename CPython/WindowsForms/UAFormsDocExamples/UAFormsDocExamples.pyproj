@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e7b9249d-06bb-4c27-a5e8-d0e6b376109a}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>
+    </InterpreterId>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_ComputerBrowserDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_UABrowseDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_UABrowseDialog\Net.ShowDialog.MultiSelect.py" />
+    <Compile Include="_UABrowseDialog\Net.ShowDialog.SelectionDescriptors.py" />
+    <Compile Include="_UADataDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_UADataDialog\Net.ShowDialog.MultiSelect.py" />
+    <Compile Include="_UAEndpointDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_UAHostAndEndpointDialog\Net.ShowDialog.Main1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_ComputerBrowserDialog" />
+    <Folder Include="_UABrowseDialog" />
+    <Folder Include="_UADataDialog" />
+    <Folder Include="_UAEndpointDialog" />
+    <Folder Include="_UAHostAndEndpointDialog" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

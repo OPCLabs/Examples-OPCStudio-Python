@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DocExamples", "Console\DocExamples\DocExamples.pyproj", "{0940CB1A-EC06-486A-9822-B75629528A80}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "UADocExamples", "Console\UADocExamples\UADocExamples.pyproj", "{91E4CB46-C3ED-4E11-B617-043CEA8CE916}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FormsDocExamples", "WindowsForms\FormsDocExamples\FormsDocExamples.pyproj", "{4DEA322F-A5F3-4912-A76A-54B1D817552F}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "UAFormsDocExamples", "WindowsForms\UAFormsDocExamples\UAFormsDocExamples.pyproj", "{E7B9249D-06BB-4C27-A5E8-D0E6B376109A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0940CB1A-EC06-486A-9822-B75629528A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0940CB1A-EC06-486A-9822-B75629528A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E4CB46-C3ED-4E11-B617-043CEA8CE916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E4CB46-C3ED-4E11-B617-043CEA8CE916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DEA322F-A5F3-4912-A76A-54B1D817552F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DEA322F-A5F3-4912-A76A-54B1D817552F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B9249D-06BB-4C27-A5E8-D0E6B376109A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B9249D-06BB-4C27-A5E8-D0E6B376109A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9AD3303-05CA-4BFE-9864-9004511FB492}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/opclabs3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Console\\DocExamples\\DocExamples.pyproj
+		SccProjectName1 = Console/DocExamples
+		SccLocalPath1 = Console\\DocExamples
+		SccProjectUniqueName2 = Console\\UADocExamples\\UADocExamples.pyproj
+		SccProjectName2 = Console/UADocExamples
+		SccLocalPath2 = Console\\UADocExamples
+		SccProjectUniqueName3 = WindowsForms\\FormsDocExamples\\FormsDocExamples.pyproj
+		SccProjectName3 = WindowsForms/FormsDocExamples
+		SccLocalPath3 = WindowsForms\\FormsDocExamples
+		SccProjectUniqueName4 = WindowsForms\\UAFormsDocExamples\\UAFormsDocExamples.pyproj
+		SccProjectName4 = WindowsForms/UAFormsDocExamples
+		SccLocalPath4 = WindowsForms\\UAFormsDocExamples
+	EndGlobalSection
+EndGlobal

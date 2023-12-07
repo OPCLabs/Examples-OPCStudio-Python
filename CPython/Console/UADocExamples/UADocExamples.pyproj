@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91e4cb46-c3ed-4e11-b617-043cea8ce916}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>
+    </InterpreterId>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmsAndConditions\Net.Acknowledge.AckedState.py" />
+    <Compile Include="AlarmsAndConditions\Net.Acknowledge.Main1.py" />
+    <Compile Include="AlarmsAndConditions\Net.BaseEvent.Main1.py" />
+    <Compile Include="AlarmsAndConditions\Net.BrowseEventSources.Overload2.py" />
+    <Compile Include="AlarmsAndConditions\Net.BrowseNotifiers.Overload2.py" />
+    <Compile Include="AlarmsAndConditions\Net.FieldResults.Main1.py" />
+    <Compile Include="AlarmsAndConditions\Net.PullEventNotification.Main1.py" />
+    <Compile Include="AlarmsAndConditions\Net.ReadAlarmState.Main1.py" />
+    <Compile Include="AlarmsAndConditions\Net.SelectClauses.Main1.py" />
+    <Compile Include="AlarmsAndConditions\Net.SubscribeEvent.CallbackLambda.py" />
+    <Compile Include="AlarmsAndConditions\Net.SubscribeEvent.Overload1.py" />
+    <Compile Include="AlarmsAndConditions\Net.SubscribeMultipleMonitoredItems.Events.py" />
+    <Compile Include="AlarmsAndConditions\Net.WhereClause.Main1.py" />
+    <Compile Include="Application\Net._IEasyUAClientServerApplication.AssureOwnCertificate.Main1.py" />
+    <Compile Include="Application\Net._IEasyUAClientServerApplication.FindGdsRegistrations.Main1.py" />
+    <Compile Include="Application\Net._IEasyUAClientServerApplication.GetApplicationElement.Main1.py" />
+    <Compile Include="Application\Net._IEasyUAClientServerApplication.GetCertificateSubjectName.Main1.py" />
+    <Compile Include="Application\Net._IEasyUAClientServerApplication.ObtainNewCertificate.Main1.py" />
+    <Compile Include="Application\Net._IEasyUAClientServerApplication.ObtainNewCertificate.Progress.py" />
+    <Compile Include="Application\Net._IEasyUAClientServerApplication.RefreshTrustLists.Main1.py" />
+    <Compile Include="Application\Net._IEasyUAClientServerApplication.RegisterToGds.Main1.py" />
+    <Compile Include="Application\Net._IEasyUAClientServerApplication.UnregisterFromGds.Main1.py" />
+    <Compile Include="Application\Net._IEasyUAClientServerApplication.UpdateGdsRegistration.Main1.py" />
+    <Compile Include="ComplexData\Net._DataType.Kind.Main1.py" />
+    <Compile Include="ComplexData\Net._EasyUAClient.ReadValue.Main1.py" />
+    <Compile Include="ComplexData\Net._EasyUAClient.SubscribeDataChange.Main1.py" />
+    <Compile Include="ComplexData\Net._EasyUAClient.WriteValue.Main1.py" />
+    <Compile Include="ComplexData\Net._GenericData.DataTypeKind1.Main1.py" />
+    <Compile Include="ComplexData\Net._GenericData._Construction.Main1.py" />
+    <Compile Include="ComplexData\Net._IEasyUAClientComplexData.ResolveDataType.Main1.py" />
+    <Compile Include="ComplexData\Net._IUADataTypeDictionaryProvider.ResolveDataTypeDescriptorFromDataTypeEncodingId.Main1.py" />
+    <Compile Include="ComplexData\Net._PluginSetup.Enabled.Main1.py" />
+    <Compile Include="ComplexData\Net._UAComplexDataClientPluginParameters.IsolatedDataTypeModelProvider.Main1.py" />
+    <Compile Include="FileProviders\Net._DirectoryContents2.Enumerate.Main1.py" />
+    <Compile Include="FileProviders\Net._FileInfo2.Properties.Main1.py" />
+    <Compile Include="FileProviders\Net._FileInfo2.ReadAllBytes.Main1.py" />
+    <Compile Include="FileProviders\Net._FileInfo2.ReadAndSeek.Main1.py" />
+    <Compile Include="FileProviders\Net._FileInfo2.ReadText.Main1.py" />
+    <Compile Include="FileProviders\Net._WritableDirectoryContents.CreateAndDelete.Main1.py" />
+    <Compile Include="FileProviders\Net._WritableFileInfo.CopyTo.Main1.py" />
+    <Compile Include="FileProviders\Net._WritableFileInfo.CreateAndDelete.Main1.py" />
+    <Compile Include="FileProviders\Net._WritableFileInfo.Write.Main1.py" />
+    <Compile Include="FileProviders\Net._WritableFileInfo.WriteAllBytes.Main1.py" />
+    <Compile Include="FileTransfer\Net._EasyUAFileTransferClient.BrowseFiles.Main1.py" />
+    <Compile Include="FileTransfer\Net._EasyUAFileTransferClient.Copy.File1.py" />
+    <Compile Include="FileTransfer\Net._EasyUAFileTransferClient.CreateDirectoryAndDelete.Main1.py" />
+    <Compile Include="FileTransfer\Net._EasyUAFileTransferClient.CreateFileAndDelete.Main1.py" />
+    <Compile Include="FileTransfer\Net._EasyUAFileTransferClient.GetFileProperties.Main1.py" />
+    <Compile Include="FileTransfer\Net._EasyUAFileTransferClient.ReadAllBytes.Main1.py" />
+    <Compile Include="FileTransfer\Net._EasyUAFileTransferClient.ReadAndSetFilePosition.Main1.py" />
+    <Compile Include="FileTransfer\Net._EasyUAFileTransferClient.WriteAllBytes.Main1.py" />
+    <Compile Include="FileTransfer\Net._EasyUAFileTransferClient.WriteFile.Main1.py" />
+    <Compile Include="FileTransfer\Net._UAFileStream.ReadAndSeek.Main1.py" />
+    <Compile Include="FileTransfer\Net._UAFileStream.ReadText.Main1.py" />
+    <Compile Include="Gds\Net._EasyUACertificateManagementClient.BrowseCertificateGroups.Main1.py" />
+    <Compile Include="Gds\Net._EasyUACertificateManagementClient.GetCertificateStatus.Main1.py" />
+    <Compile Include="Gds\Net._EasyUAGlobalDiscoveryClient.FindApplications.Main1.py" />
+    <Compile Include="Gds\Net._EasyUAGlobalDiscoveryClient.QueryApplications.Main1.py" />
+    <Compile Include="Gds\Net._EasyUAGlobalDiscoveryClient.QueryServers.Main1.py" />
+    <Compile Include="Gds\Net._EasyUAGlobalDiscoveryClient.UnregisterApplication.Main1.py" />
+    <Compile Include="Interaction\Net.AcceptCertificate.Https.py" />
+    <Compile Include="Interaction\Net.AcceptCertificate.Instance.py" />
+    <Compile Include="Interaction\Net.AllowEndpointDomain.Main1.py" />
+    <Compile Include="Interaction\Net.ConsoleInteraction.ColorizeOutput.py" />
+    <Compile Include="Interaction\Net.ConsoleInteraction.TurnOff.py" />
+    <Compile Include="Licensing\Net.LicenseInfo.AllFields.py" />
+    <Compile Include="Licensing\Net.LicenseInfo.SerialNumber.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.PullDataSetMessage.Main1.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.Callback.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.CaptureFile.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.Ethernet.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.ExtractField.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.FieldNames.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.Filter.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.Main1.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.MappingParameters.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.Metadata.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.MqttFromFileStorage.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.MqttJsonTcp.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.MqttTcpSaveCopy.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.MqttUadpTcp.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.PublishedDataSet.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.PublisherId.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.ResolveFromFile.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSet.Secure.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.SubscribeDataSetField.Main1.py" />
+    <Compile Include="PubSub\_EasyUASubscriber\Net.UnsubscribeDataSet.Main1.py" />
+    <Compile Include="PubSub\_IUAReadOnlyPubSubConfiguration\Net.GetMethods.PublishedDataSets.py" />
+    <Compile Include="PubSub\_IUAReadOnlyPubSubConfiguration\Net.GetMethods.PubSubComponents.py" />
+    <Compile Include="_CertificateGenerationParameters\Net.ValidityPeriodInMonths.Main1.py" />
+    <Compile Include="_EasyUAClientConnectionControl\Net.LockAndUnlockConnection.Main1.py" />
+    <Compile Include="_EasyUAClientConnectionMonitoring\Net.ServerConditionChanged.Main1.py" />
+    <Compile Include="_EasyUAClientExtension\Net.WaitForValue.Main1.py" />
+    <Compile Include="_EasyUAClientNodeRegistration\Net.RegisterAndUnregisterMultipleNodes.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.Browse.All.py" />
+    <Compile Include="_EasyUAClient\Net.Browse.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.BrowseDataNodes.Overload1.py" />
+    <Compile Include="_EasyUAClient\Net.BrowseDataNodes.Recursive.py" />
+    <Compile Include="_EasyUAClient\Net.BrowseDataVariables.Overload2.py" />
+    <Compile Include="_EasyUAClient\Net.BrowseMethods.Overload2.py" />
+    <Compile Include="_EasyUAClient\Net.BrowseObjects.Overload2.py" />
+    <Compile Include="_EasyUAClient\Net.BrowseProperties.Overload2.py" />
+    <Compile Include="_EasyUAClient\Net.CallMethod.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.CallMultipleMethods.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.ChangeMonitoredItemSubscription.Overload1.py" />
+    <Compile Include="_EasyUAClient\Net.ChangeMultipleMonitoredItemSubscriptions.Overload2.py" />
+    <Compile Include="_EasyUAClient\Net.DiscoverGlobalServers.Hierarchical.py" />
+    <Compile Include="_EasyUAClient\Net.DiscoverGlobalServers.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.DiscoverLocalServers.Overload1.py" />
+    <Compile Include="_EasyUAClient\Net.DiscoverNetworkServers.Hierarchical.py" />
+    <Compile Include="_EasyUAClient\Net.DiscoverNetworkServers.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.FindLocalApplications.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.GetMonitoredItemArguments.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.GetMonitoredItemArgumentsDictionary.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.Isolated.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.LogEntry.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.PullDataChangeNotification.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.PullDataChangeNotification.Multiple.py" />
+    <Compile Include="_EasyUAClient\Net.Read.FromDevice.py" />
+    <Compile Include="_EasyUAClient\Net.Read.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.ReadMultiple.BrowsePath.py" />
+    <Compile Include="_EasyUAClient\Net.ReadMultiple.FromDevice.py" />
+    <Compile Include="_EasyUAClient\Net.ReadMultiple.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.ReadMultipleValues.DataType.py" />
+    <Compile Include="_EasyUAClient\Net.ReadMultipleValues.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.ReadValue.ArrayOfUInt16.py" />
+    <Compile Include="_EasyUAClient\Net.ReadValue.MultipleServers.py" />
+    <Compile Include="_EasyUAClient\Net.ReadValue.NamespaceArray.py" />
+    <Compile Include="_EasyUAClient\Net.ReadValue.Overload1.py" />
+    <Compile Include="_EasyUAClient\Net.ReadValue.Overload2.py" />
+    <Compile Include="_EasyUAClient\Net.ReadValue.Repeated.py" />
+    <Compile Include="_EasyUAClient\Net.RetrieveAllDataTypes.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeDataChange.AbsoluteDeadband.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeDataChange.CallbackMethod.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeDataChange.Filter.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeDataChange.Overload1.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeDataChange.PercentDeadband.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeMultipleMonitoredItems.AbsoluteDeadband.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeMultipleMonitoredItems.AllInObject.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeMultipleMonitoredItems.Filter.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeMultipleMonitoredItems.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeMultipleMonitoredItems.PercentDeadband.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeMultipleMonitoredItems.StateAsInteger.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeMultipleMonitoredItems.StateAsObject.py" />
+    <Compile Include="_EasyUAClient\Net.SubscribeMultipleMonitoredItems.StoreInDictionary.py" />
+    <Compile Include="_EasyUAClient\Net.UnsubscribeAllMonitoredItems.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.UnsubscribeMonitoredItem.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.UnsubscribeMultipleMonitoredItems.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.UnsubscribeMultipleMonitoredItems.Some.py" />
+    <Compile Include="_EasyUAClient\Net.Write.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.WriteMultiple.TestSuccess.py" />
+    <Compile Include="_EasyUAClient\Net.WriteMultipleValues.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.WriteMultipleValues.TestSuccess.py" />
+    <Compile Include="_EasyUAClient\Net.WriteMultipleValues.ValueTypeCode.py" />
+    <Compile Include="_EasyUAClient\Net.WriteMultipleValues.ValueTypeFullName.py" />
+    <Compile Include="_EasyUAClient\Net.WriteValue.ArrayOfInt32.py" />
+    <Compile Include="_EasyUAClient\Net.WriteValue.ByteString.py" />
+    <Compile Include="_EasyUAClient\Net.WriteValue.Incrementing.py" />
+    <Compile Include="_EasyUAClient\Net.WriteValue.Main1.py" />
+    <Compile Include="_EasyUAClient\Net.WriteValue.TypeCode.py" />
+    <Compile Include="_UAApplicationManifest\Net.ApplicationName.Main1.py" />
+    <Compile Include="_UAApplicationManifest\Net.InstanceOwnStorePath.PlatformSpecific.py" />
+    <Compile Include="_UABrowsePathParser\Net.Parse.Main1.py" />
+    <Compile Include="_UABrowsePathParser\Net.ParseRelative.Main1.py" />
+    <Compile Include="_UABrowsePathParser\Net.TryParse.Main1.py" />
+    <Compile Include="_UABrowsePathParser\Net.TryParseRelative.Main1.py" />
+    <Compile Include="_UAClientSessionParameters\Net.Timeouts.Isolated.py" />
+    <Compile Include="_UAIndexRangeList\Net.Usage.ReadValue.py" />
+    <Compile Include="_UAIndexRangeList\Net.Usage.Subscribe.py" />
+    <Compile Include="_UANodeId\Net._Construction.Main1.py" />
+    <Compile Include="_UAStatusCode\Net.ToString.Main1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AlarmsAndConditions" />
+    <Folder Include="Application" />
+    <Folder Include="ComplexData" />
+    <Folder Include="FileProviders" />
+    <Folder Include="FileTransfer" />
+    <Folder Include="Gds" />
+    <Folder Include="Interaction" />
+    <Folder Include="Licensing" />
+    <Folder Include="PubSub\" />
+    <Folder Include="PubSub\_EasyUASubscriber" />
+    <Folder Include="PubSub\_IUAReadOnlyPubSubConfiguration" />
+    <Folder Include="_CertificateGenerationParameters" />
+    <Folder Include="_EasyUAClient" />
+    <Folder Include="_EasyUAClientConnectionControl" />
+    <Folder Include="_EasyUAClientConnectionMonitoring" />
+    <Folder Include="_EasyUAClientExtension" />
+    <Folder Include="_EasyUAClientNodeRegistration" />
+    <Folder Include="_UAApplicationManifest" />
+    <Folder Include="_UABrowsePathParser" />
+    <Folder Include="_UAClientSessionParameters" />
+    <Folder Include="_UAIndexRangeList" />
+    <Folder Include="_UANodeId" />
+    <Folder Include="_UAStatusCode" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

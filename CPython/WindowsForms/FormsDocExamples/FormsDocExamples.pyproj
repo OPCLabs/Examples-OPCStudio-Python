@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4dea322f-a5f3-4912-a76a-54b1d817552f}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>
+    </InterpreterId>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_AEAreaOrSourceDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_AEAttributeDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_AECategoryConditionDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_AECategoryDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_ComputerBrowserDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_DAItemDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_OpcBrowseDialog\Net.ShowDialog.Main1.py" />
+    <Compile Include="_OpcServerDialog\Net.ShowDialog.Main1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_AEAreaOrSourceDialog" />
+    <Folder Include="_AEAttributeDialog" />
+    <Folder Include="_AECategoryConditionDialog" />
+    <Folder Include="_AECategoryDialog" />
+    <Folder Include="_ComputerBrowserDialog" />
+    <Folder Include="_DAItemDialog" />
+    <Folder Include="_OpcBrowseDialog" />
+    <Folder Include="_OpcServerDialog" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

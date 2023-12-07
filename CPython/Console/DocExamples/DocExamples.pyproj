@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0940cb1a-ec06-486a-9822-b75629528a80}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>
+    </InterpreterId>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmsAndEvents\_AEAttributeElement\Net.Properties.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_AECategoryElement\Net.Properties.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_AEConditionElement\Net.Properties.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_AESubscriptionFilter\Net.Properties.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.AcknowledgeCondition.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.BrowseAreas.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.BrowseServers.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.BrowseSources.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.ChangeEventSubscription.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.GetConditionState.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.PullNotification.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.QueryEventCategories.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.QuerySourceConditions.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.RefreshEventSubscription.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.SubscribeEvents.CallbackMethod.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.SubscribeEvents.FilterByCategories.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.SubscribeEvents.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.UnsubscribeAllEvents.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAEClient\Net.UnsubscribeEvents.Main1.py" />
+    <Compile Include="AlarmsAndEvents\_EasyAENotificationEventArgs\Net.AttributeValues.Main1.py" />
+    <Compile Include="DataAccess\Xml\Net.BrowseNodes.RecursiveXml.py" />
+    <Compile Include="DataAccess\Xml\Net.ChangeItemSubscription.Main1Xml.py" />
+    <Compile Include="DataAccess\Xml\Net.GetMultiplePropertyValues.DataTypeXml.py" />
+    <Compile Include="DataAccess\Xml\Net.PullItemChanged.Main1Xml.py" />
+    <Compile Include="DataAccess\Xml\Net.PullItemChanged.MultipleItemsXml.py" />
+    <Compile Include="DataAccess\Xml\Net.ReadMultipleItems.Main1Xml.py" />
+    <Compile Include="DataAccess\Xml\Net.SubscribeItem.CallbackMethodXml.py" />
+    <Compile Include="DataAccess\Xml\Net.WriteItemValue.Main1Xml.py" />
+    <Compile Include="DataAccess\_EasyDAClientExtension\Net.GetDataTypePropertyValue.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClientExtension\Net.GetItemPropertyRecord.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClientExtension\Net.GetPropertyValueDictionary.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClientExtension\Net.WaitForItemValue.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClientHoldPeriods\Net.TopicWrite.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.BrowseAccessPaths.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.BrowseBranches.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.BrowseLeaves.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.BrowseNodes.DataTypes.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.BrowseNodes.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.BrowseNodes.Recursive.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.BrowseNodes.RecursiveWithRead.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.BrowseProperties.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.BrowseServers.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ChangeItemSubscription.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ChangeItemSubscription.PercentDeadband.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ChangeMultipleItemSubscriptions.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.GetMultiplePropertyValues.DataType.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.GetMultiplePropertyValues.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.GetPropertyValue.DataType.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.GetPropertyValue.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.Isolated.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.PullItemChanged.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.PullItemChanged.MultipleItems.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadItem.BrowsePath.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadItem.DataTypes.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadItem.DeviceSource.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadItem.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadItem.Synchronous.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadItemValue.Array.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadItemValue.CLSID.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadItemValue.DeviceSource.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadItemValue.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadMultipleItems.DeviceSource.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadMultipleItems.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadMultipleItems.ManyRepeat.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadMultipleItems.Synchronous.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.ReadMultipleItemValues.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeItem.CallbackMethod.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeItem.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeItem.PercentDeadband.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeMultipleItems.DataTypes.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeMultipleItems.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeMultipleItems.ManyItems.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeMultipleItems.PercentDeadband.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeMultipleItems.StateAsInteger.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeMultipleItems.StateAsObject.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeMultipleItems.StoreInDictionary.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.SubscribeMultipleItems.WithRead.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.UnsubscribeAllItems.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.UnsubscribeItem.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.UnsubscribeMultipleItems.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.WriteItem.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.WriteItemValue.Array.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.WriteItemValue.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.WriteItemValue.RequestedDataType.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.WriteMultipleItems.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.WriteMultipleItemValues.Main1.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.WriteMultipleItemValues.RequestedDataType.py" />
+    <Compile Include="DataAccess\_EasyDAClient\Net.WriteMultipleItemValues.TestSuccess.py" />
+    <Compile Include="DataAccess\_EasyDAItemChangedEventArgs\Net.General.Main1.py" />
+    <Compile Include="_ServerCategories\Net.General.Main1.py" />
+    <Compile Include="_ServerElement\Net.General.Main1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AlarmsAndEvents\" />
+    <Folder Include="AlarmsAndEvents\_AEAttributeElement" />
+    <Folder Include="AlarmsAndEvents\_AECategoryElement" />
+    <Folder Include="AlarmsAndEvents\_AEConditionElement" />
+    <Folder Include="AlarmsAndEvents\_AESubscriptionFilter" />
+    <Folder Include="AlarmsAndEvents\_EasyAEClient" />
+    <Folder Include="AlarmsAndEvents\_EasyAENotificationEventArgs" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="DataAccess\Xml" />
+    <Folder Include="DataAccess\_EasyDAClient" />
+    <Folder Include="DataAccess\_EasyDAClientExtension" />
+    <Folder Include="DataAccess\_EasyDAClientHoldPeriods" />
+    <Folder Include="DataAccess\_EasyDAItemChangedEventArgs" />
+    <Folder Include="_ServerCategories" />
+    <Folder Include="_ServerElement" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
