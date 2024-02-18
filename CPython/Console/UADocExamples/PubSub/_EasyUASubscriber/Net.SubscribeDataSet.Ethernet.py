@@ -1,16 +1,19 @@
 # $Header: $
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
+
 ##region Example
 # This example shows how to subscribe to all dataset messages on an OPC-UA PubSub connection with Ethernet UADP mapping.
 #
 # In order to produce network messages for this example, run the UADemoPublisher tool. For documentation, see
-# http://kb.opclabs.com/UADemoPublisher_Basics . In some cases, you may have to specify the interface name to be used.
+# https://kb.opclabs.com/UADemoPublisher_Basics . In some cases, you may have to specify the interface name to be used.
 # The UADemoPublisher must be told to use the Ethernet transport: run it with the -eth switch on the command line.
 #
 # The OpcLabs.Pcap assembly needs to be referenced in your project (or otherwise made available, together with its
 # dependencies) for the Ethernet transport to work, and additional software installation may be needed as well. Refer to
 # the documentation for more information.
-
+#
+# Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
+# OPC client and subscriber examples in Python on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-Python .
 # The QuickOPC package is needed. Install it using "pip install opclabs_quickopc".
 import opclabs_quickopc
 import opclabs_pcap

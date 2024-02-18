@@ -1,9 +1,12 @@
 # $Header: $
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
 ##region Example
+
 # This example shows how subscribe to changes of a single item in an OPC XML-DA server and display the value of the item
 # with each change, using a callback method.
-
+#
+# Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
+# OPC client and subscriber examples in Python on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-Python .
 # The QuickOPC package is needed. Install it using "pip install opclabs_quickopc".
 import opclabs_quickopc
 import time
@@ -35,11 +38,14 @@ IEasyDAClientExtension.SubscribeItem(client,
     EasyDAItemChangedEventHandler(itemChanged),
     None)
 
-print('Processing item changed events for 30 seconds...')
-time.sleep(30)
+print('Processing item change callbacks for 10 seconds...')
+time.sleep(10)
 
 print('Unsubscribing item changes...')
 client.UnsubscribeAllItems()
+
+print('Waiting for 2 seconds...')
+time.sleep(2)
 
 print('Finished.')
 

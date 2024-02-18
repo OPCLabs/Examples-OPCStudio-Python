@@ -1,13 +1,16 @@
 # $Header: $
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
+
 ##region Example
 # This example shows how to subscribe to dataset messages and specify a filter, resolving logical parameters to physical
 # from an OPC-UA PubSub configuration file in binary format. The metadata obtained through the resolution is used to
 # decode fixed layout messages with RawData field encoding.
 #
 # In order to produce network messages for this example, run the UADemoPublisher tool. For documentation, see
-# http://kb.opclabs.com/UADemoPublisher_Basics . In some cases, you may have to specify the interface name to be used.
-
+# https://kb.opclabs.com/UADemoPublisher_Basics . In some cases, you may have to specify the interface name to be used.
+#
+# Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
+# OPC client and subscriber examples in Python on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-Python .
 # The QuickOPC package is needed. Install it using "pip install opclabs_quickopc".
 import opclabs_quickopc
 import time

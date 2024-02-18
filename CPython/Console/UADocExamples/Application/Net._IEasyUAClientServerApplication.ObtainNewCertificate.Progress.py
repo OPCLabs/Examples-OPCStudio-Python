@@ -1,9 +1,12 @@
 # $Header: $
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
+
 ##region Example
 # Shows how to obtain a new application certificate from the certificate manager (GDS), and store it for subsequent
 # usage, with progress reporting.
-
+#
+# Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
+# OPC client and subscriber examples in Python on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-Python .
 # The QuickOPC package is needed. Install it using "pip install opclabs_quickopc".
 import opclabs_quickopc
 

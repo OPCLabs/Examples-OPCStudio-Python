@@ -1,9 +1,12 @@
 # $Header: $
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
+
 ##region Example
 # This example shows how to create and use two isolated client objects, resulting in two separate connections to the
 # target OPC DA server.
-
+#
+# Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
+# OPC client and subscriber examples in Python on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-Python .
 # The QuickOPC package is needed. Install it using "pip install opclabs_quickopc".
 import opclabs_quickopc
 import time
@@ -15,12 +18,12 @@ from OpcLabs.EasyOpc.DataAccess import *
 # Item changed event handler
 def itemChangedCallback(sender, eventArgs):
     assert eventArgs is not None
-    print('[', eventArgs.Arguments.State, '] ', sep='', end='')
+    displayPrefix = '[{}]'.format(eventArgs.Arguments.State)
     if eventArgs.Succeeded:
         assert eventArgs.Vtq is not None
-        print(eventArgs.Vtq)
+        print(displayPrefix + ' ' + eventArgs.Vtq.ToString() + '\n', end='')
     else:
-        print('*** Failure: ', eventArgs.ErrorMessageBrief, sep='')
+        print(displayPrefix + ' *** Failure: ' + eventArgs.ErrorMessageBrief + '\n', end='')
 
 
 # Instantiate the client objects and make them isolated.

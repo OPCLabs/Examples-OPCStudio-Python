@@ -1,8 +1,11 @@
 # $Header: $
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
+
 ##region Example
 # This example shows how to write a value into a single item, specifying its requested data type.
-
+#
+# Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
+# OPC client and subscriber examples in Python on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-Python .
 # The QuickOPC package is needed. Install it using "pip install opclabs_quickopc".
 import opclabs_quickopc
 
@@ -20,7 +23,7 @@ try:
     IEasyDAClientExtension.WriteItemValue(client, '', 'OPCLabs.KitServer.2', 'Simulation.Register_I4', 12345,
                                           VarType(VarTypes.I4)) # <-- the requested data type
 except OpcException as opcException:
-    print('*** Failure: ' + opcException.GetBaseException().Message)
+    print('*** Failure: ' + opcException.GetBaseException().Message, sep='')
     exit()
 
 print('Finished.')

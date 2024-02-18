@@ -1,8 +1,11 @@
 # $Header: $
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
+
 ##region Example
 # Shows how to write into multiple OPC items using a single method call, and read multiple item values back.
-
+#
+# Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
+# OPC client and subscriber examples in Python on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-Python .
 # The QuickOPC package is needed. Install it using "pip install opclabs_quickopc".
 import opclabs_quickopc
 
@@ -52,7 +55,5 @@ for i, valueResult in enumerate(valueResultArray):
     else:
         assert valueResult.Exception is not None
         print('valueResultArray[', i, '] *** Failure: ', valueResult.ErrorMessageBrief, sep='')
-
-print('Finished.')
 
 ##endregion Example

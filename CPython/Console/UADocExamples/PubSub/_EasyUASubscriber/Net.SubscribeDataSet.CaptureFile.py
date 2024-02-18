@@ -1,12 +1,15 @@
 # $Header: $
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
+
 ##region Example
 # This example shows how to feed the packet capture file into the PubSub subscriber, instead of connecting to the
 # message oriented middleware (receiving the messages from the network).
 #
 # The OpcLabs.Pcap assembly needs to be referenced in your project (or otherwise made available, together with its
 # dependencies) for the capture files to work. Refer to the documentation for more information.
-
+#
+# Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
+# OPC client and subscriber examples in Python on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-Python .
 # The QuickOPC package is needed. Install it using "pip install opclabs_quickopc".
 import opclabs_quickopc
 import opclabs_pcap

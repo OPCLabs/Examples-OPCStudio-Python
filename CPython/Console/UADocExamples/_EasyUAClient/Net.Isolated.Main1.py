@@ -1,9 +1,12 @@
 # $Header: $
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
+
 ##region Example
 # This example shows how to create and use two isolated client objects, resulting in two separate connections to the
 # target OPC UA server.
-
+#
+# Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
+# OPC client and subscriber examples in Python on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-Python .
 # The QuickOPC package is needed. Install it using "pip install opclabs_quickopc".
 import opclabs_quickopc
 import time
@@ -15,12 +18,12 @@ from OpcLabs.EasyOpc.UA.OperationModel import *
 
 # The callback is a regular method the displays the value.
 def dataChangeCallback(sender, eventArgs):
-    print('[', eventArgs.Arguments.State, '] ', sep='', end='')
+    displayPrefix = '[{}]'.format(eventArgs.Arguments.State)
     if eventArgs.Succeeded:
         assert eventArgs.AttributeData is not None
-        print('Value: ', eventArgs.AttributeData.Value, sep='')
+        print(displayPrefix + ' Value: ' + '{}'.format(eventArgs.AttributeData.Value) + '\n', end='')
     else:
-        print('*** Failure: ', eventArgs.ErrorMessageBrief, sep='')
+        print(displayPrefix + ' *** Failure: ' + eventArgs.ErrorMessageBrief + '\n', end='')
 
 
 endpointDescriptor = UAEndpointDescriptor('opc.tcp://opcua.demo-this.com:51210/UA/SampleServer')
