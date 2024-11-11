@@ -8,7 +8,7 @@ are installed using the [OPC Studio Setup program](https://www.opclabs.com/produ
 The QuickOPC package is needed. Install it using "pip install opclabs_quickopc".
 
 Useful links:
-* [OPC client and subscriber examples in the documentation](https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html).
+* [OPC client and subscriber examples in the documentation](https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/2024.1/User%27s%20Guide%20and%20Reference-OPC%20Studio/webframe.html#Examples%20in%20the%20Documentation%20(List%29.html).
 * [OPC client and subscriber examples in Python on GitHub](https://github.com/OPCLabs/Examples-QuickOPC-Python).
 * [OPC Studio Setup program](https://www.opclabs.com/products/quickopc/downloads)
 * [Getting started with OPC in Python](https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/2024.1/User%27s%20Guide%20and%20Reference-OPC%20Studio/webframe.html#Getting%20Started%20in%20Python.html).
@@ -17,5 +17,6 @@ Useful links:
 * [Introduction to OPC and Python on our Web page](https://www.opclabs.com/products/quickopc/languages-and-tools/python).
 * [Programming OPC in Python](https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/2024.1/User%27s%20Guide%20and%20Reference-OPC%20Studio/webframe.html#Programming%20in%20Python.html).
 
-Missing some example? Ask us for it on our [Online Forums](https://www.opclabs.com/forum/index)!
-You do not have to own a commercial license in order to use Online Forums, and we reply to every post.
+Need help, or missing some example? Ask us for it on our [Online Forums](https://www.opclabs.com/forum/index)!
+You do not have to own a commercial license in order to use Online Forums, 
+and we reply to every post.
