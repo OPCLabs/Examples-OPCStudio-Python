@@ -2,7 +2,7 @@
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
 
 ##region Example
-# Shows how to obtain a new application certificate from the certificate manager (GDS), and store it for subsequent
+# Shows how to obtain a new application certificate pack from the certificate manager (GDS), and store it for subsequent
 # usage.
 #
 # Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
@@ -32,16 +32,19 @@ application = EasyUAApplication.Instance
 applicationElement = IEasyUAClientServerApplicationExtension.GetApplicationElement(application)
 print('Application URI string: ', applicationElement.ApplicationUriString, sep='')
 
-# Obtain a new application certificate from the certificate manager (GDS), and store it for subsequent usage.
+# Obtain a new application certificate pack from the certificate manager (GDS), and store it for subsequent usage.
 try:
-    print('Obtaining new certificate...')
-    certificate = IEasyUAClientServerApplicationExtension.ObtainNewCertificate(application, gdsEndpointDescriptor)
+    print('Obtaining new certificate pack...')
+    certificateDictionary = IEasyUAClientServerApplicationExtension.ObtainNewCertificatePack(application, gdsEndpointDescriptor)
 except UAException as uaException:
     print('*** Failure: ' + uaException.GetBaseException().Message)
     exit()
 
 # Display results.
-print('Certificate: ', certificate, sep='')
+for pair in certificateDictionary:
+    print()
+    print('Certificate type Id: ', pair.Key, sep='')
+    print('Certificate: ', pair.Value, sep='')
 
 print()
 print('Finished.')

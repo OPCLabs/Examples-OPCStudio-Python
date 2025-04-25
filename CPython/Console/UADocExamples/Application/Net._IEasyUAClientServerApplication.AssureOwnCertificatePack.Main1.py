@@ -2,7 +2,8 @@
 # Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
 
 ##region Example
-# Shows how to assure presence of the own application certificate, and display its thumbprint.
+# Shows how to assure presence of the own application certificate pack, and display default application certificate 
+# thumbprint.
 #
 # Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
 # OPC client and subscriber examples in Python on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-Python .
@@ -22,17 +23,17 @@ from OpcLabs.EasyOpc.UA.OperationModel import *
 application = EasyUAApplication.Instance
 
 try:
-    print('Assuring presence of the own application certificate...')
-    created = IEasyUAClientServerApplicationExtension.AssureOwnCertificate(application)
+    print('Assuring presence of the own application certificate pack...')
+    created = IEasyUAClientServerApplicationExtension.AssureOwnCertificatePack(application)
 
-    print('A new certificate has been created.' if created else 'An existing certificate has been found.')
+    print('A new certificate pack has been created.' if created else 'An existing certificate pack has been found.')
 
     print()
-    print('Finding the current application certificate...')
+    print('Finding the current default application certificate...')
     pkiCertificate = IEasyUAClientServerApplicationExtension.FindOwnCertificate(application)
 
     print()
-    print('The thumbprint of the current application certificate is: ',
+    print('The thumbprint of the current default application certificate is: ',
           None if pkiCertificate is None else pkiCertificate.Thumbprint,
           sep='')
 except UAException as uaException:

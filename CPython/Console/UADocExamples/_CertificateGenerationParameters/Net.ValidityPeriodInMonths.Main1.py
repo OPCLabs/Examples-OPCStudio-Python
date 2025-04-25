@@ -30,14 +30,14 @@ client = EasyUAClient()
 application = EasyUAApplication.Instance
 
 try:
-    print('Removing the current application instance certificate...')
-    IEasyUAClientServerApplicationExtension.RemoveOwnCertificate(application, False) # mustExist=False
+    print('Removing the current application instance certificate pack...')
+    IEasyUAClientServerApplicationExtension.RemoveOwnCertificatePack(application, False) # mustExist=False
 
     print('Do something - invoke an OPC read, to trigger auto-generation of a new instance certificate...')
     IEasyUAClientExtension.ReadValue(client,
                                      endpointDescriptor, UANodeDescriptor("nsu=http://test.org/UA/Data/ ;i=10853"))
 
-    print('Finding the current application instance certificate...')
+    print('Finding the current default application instance certificate...')
     instanceCertificate = IEasyUAClientServerApplicationExtension.FindOwnCertificate(application)
 
     if instanceCertificate is not None:
